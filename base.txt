@@ -1,0 +1,10 @@
+Aprender e dominar:
+
+1º O que é lógica de programação (ok)
+2º Inputs e Outputs (ok)
+3º Variáveis e Constantes (ok)
+4º Condicionais (ok)
+5º Array ou Vetores (ok)
+6º Loopings (ok)
+7º Funções (ok)
+8º Objetos (ok)

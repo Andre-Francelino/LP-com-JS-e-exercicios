@@ -1,0 +1,58 @@
+<h1>Media Bimestral</h1>
+
+<script>
+// Curso: Lógica de Programação com JavaScript
+
+// Outputs:
+// output - alert('Mensagem')
+    alert("Olá, estou aprendendo JavaScript!")
+    alert("Cuida...Bora estudar!")
+// output - console.log()
+    console.log('Testando console')
+// output - document.write()
+    //document.write('..And MetallicA for all...');
+
+
+// Inputs:
+// input - prompt
+    //prompt("Digite o seu nome: ")
+
+// variável
+    var nome = prompt("Digite seu nome: ");
+    alert("Bem vindo ao sistema " + nome);
+    console.log("Olá, me chamo " + nome);
+    //document.write(nome);
+
+    var banda = prompt("Qual é sua banda favorita?")
+    alert(banda);
+    console.log("Minha banda favorita é o " + banda)
+
+//prompt sempre vai devolver um tipo texto (String)
+//parseInt converte o tipo String p/ tipo Inteiro (sem casas decimais)
+//parseFloat converte o tipo String p/ tipo Float (com casas decimais)
+
+    var nota1 = prompt("Digite sua 1ª nota: ");
+    var nota2 = prompt("Digite sua 2ª nota: ");
+    var nota3 = prompt("Digite sua 3ª nota: ");
+    var nota4 = prompt("Digite sua 4ª nota: ");
+
+    var soma = (parseFloat(nota1) + 
+                parseFloat(nota2) + 
+                parseFloat(nota3) + 
+                parseFloat(nota4));
+
+    var media = soma / 4;
+    
+    document.write("A soma de suas notas é: " + soma + "<br>");
+    document.write("A média de suas notas é: " + media + "<br>");
+
+    // Se a média for menor que 60, REPROVADO!
+    // Se não, o aluno está APROVADO!!!
+    if(media < 6) {
+        document.write("Estude mais, " + nome + ". Infelizmente você está REPROVADO! :(" + "<br>")
+    } else {
+        document.write("Parabéns " + nome + ". Você está APROVADO!!!")
+    }
+
+</script>
+
