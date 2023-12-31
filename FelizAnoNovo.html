@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagem de Ano Novo</title>
+</head>
+<body>
+
+<script>
+    // Função para obter a saudação de Ano Novo
+    function getNewYearMessage() {
+        const currentDate = new Date();
+        const currentYear = currentDate.getFullYear();
+        const newYear = new Date(currentYear + 1, 0, 1); // Próximo ano, 1º de janeiro
+
+        // Verificar se já é o próximo ano
+        if (currentDate < newYear) {
+            return `Feliz Ano Novo, ${currentYear + 1}! Que este ano seja cheio de alegrias e realizações.`;
+        } else {
+            return `Bem-vindo ao ${currentYear + 1}! Desejamos a você um ano repleto de felicidade e sucesso.`;
+        }
+    }
+
+    // Exibir a mensagem na página
+    document.body.innerHTML = '<h1>' + getNewYearMessage() + '</h1>';
+</script>
+
+</body>
+</html>
